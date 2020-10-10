@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz-Countries and Capitals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./final-style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <!-- maybe add nav bar once done-->
+        </header>
+        <section class="home-container" id="home-container">
+            <h1 class ="pageTitle">The Capital-City quiz</h1>
+            <div class="home-sub">
+                <p>How good are you in Geography? <br>Find out by playing this fun and educational game.</p>
+                <p>INSTRUCTIONS:</p>
+                <ol>
+                    <li>Press the button Start to see the first question. </li>
+                    <li>Select your answer, only one ooption is allowed.</li>
+                    <li>You can click submit to check if you clicked the right answer and then, clicked next to view the following question.</li>
+                    <li>If you prefer you can submit all you answers first and then click "Check All Answers"</li>
+                </ol>
+                <p>Good Luck!</p>
+                <button type="submit" id="btnsubmit">Check All Answers</button>
+                <button id="start">Start</button>
+                <button id="restart"><a href="./final-index.html">Restart Game</a></button>
+                <br>
+                <br>
+            </div>            
+        </section>
+        <div id="quizDiv" ></div>
+        <div id="resultsDiv">
+            <div class="link">
+                <a href="#home-container">Go top and check results</a>
+            </div>
+        </div>
+        <script type="module" src="js/final-index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+/*This is the style of the quizz*/
+/* *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    max-width: 100%;
+} */
+html,body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h2 {
+    position: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    /* max-width: 100%; */
+}
+/* ----- added today  */
+.questionDiv{
+    /* filter:  brightness(40%); */
+    background-image: brightness(40%);
+    /* min-height: 500px; */
+    /* min-height: 100%; */
+    /* backdrop-filter: blur(50px);
+    backdrop-filter: grayscale(0.5) opacity(0.8); */
+    
+}
+
+
+
+.submitNextDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    width: 120px;
+    border-radius: 12px;
+    margin-bottom: 0px;
+}
+
+.nextDiv,
+.submitDiv{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    
+    
+}
+#resultsdiv{
+    display:flex;
+    flex-wrap: wrap;
+    border-color: black;
+}
+.home-container{
+    min-height: 100%;
+    max-width: 100%;
+    background-color: black;
+    padding: 30px;
+}
+.home-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+}
+.home-container h1{
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 100px;
+}
+.home-container p,
+ol{
+    color: white;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link,
+button{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: white;
+    border-radius: 10px;
+    border-width: thin;
+    border-color: white;
+}
+button:hover{
+    box-shadow: 2px 2px 25px 7px white;
+}
+button a {
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+#resultsDiv{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.optionsForm{
+    max-width: 400px;
+}
+@media screen and (max-width: 480px) {
+    h2{
+        font-size: 25px;
+    }
+    .home-container h1{
+        font-size: 50px;
+    }
+    .optionsForm{
+        max-width: 200px;
+    }
+  }
