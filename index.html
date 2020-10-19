@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
         <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
@@ -26,8 +27,8 @@
                 <ol>
                     <li>Press the button Start to see the first question. </li>
                     <li>Select your answer, only one ooption is allowed.</li>
-                    <li>You can click submit to check if you clicked the right answer and then, clicked next to view the following question.</li>
-                    <li>If you prefer you can submit all you answers first and then click "Check All Answers"</li>
+                    <li>You can click submit to check if you clicked the right answer. Then, click next to view the following question.</li>
+                    <li>If you prefer you can submit all you answers first, and then, click "Check All Answers".</li>
                 </ol>
                 <p>Good Luck!</p>
                 <button type="submit" id="btnsubmit">Check All Answers</button>
@@ -252,6 +253,8 @@ function buildQuiz(questions){
                     resultQuestion.style.cssText = "font-family: 'Roboto', sans-serif; background-color: white; padding: 10px";
                     let optionDiv = document.getElementById('optionDiv' + option);
                     optionDiv.style.color = "green";
+                    quizDiv2.style.backgroundImage = " " + "url('" + question.bgImage + "')";
+                    quizDiv2.style.backgroundBlendMode = 'none';
                     console.log(quizDiv2);
                 }
               
@@ -261,6 +264,10 @@ function buildQuiz(questions){
                     resultQuestion.style.cssText = " font-family: 'Roboto', sans-serif; background-color: white; padding: 10px";
                     let optionDiv = document.getElementById('optionDiv' + option);
                     optionDiv.style.color = 'red';
+                    // optionsForm.style.backgroundColor = 'red';
+
+                    quizDiv2.style.backgroundImage = "linear-gradient(black, red), " + "url('" + question.bgImage + "')";
+                    quizDiv2.style.backgroundBlendMode = 'multiply';
                 }     
             });
             
